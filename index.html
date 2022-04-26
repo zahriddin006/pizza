@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>pizza</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- bootstrap Link -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <main class="pizza-block">
+        <div class="container">
+            <div class="pizza-inner d-flex justify-content-center align-items-center flex-column vh-100">
+                <h1 class="pizza-title w-75 text-center py-3 text-white h2 mb-5">Pitsa buyurtma qilish</h1>
+
+                <div class="bg-warning shadow rounded-3 d-flex">
+                    <div class="py-2 px-4 me-4">
+                        <form class="pizza-form" id="pizza-form" action="https://echo.htmlacademy.ru" method="POST">
+
+                            <div class="mb-5">
+                                <h4 for="select">Noni qanday bo'lsin?</h4>
+                                <select class="bread-select w-50 fs-5 rounded-3 px-2" name="bread" id="select"></select>
+                            </div>
+
+                            <div class="mb-5">
+                                <h4>Kattaligi</h4>
+                                <div class="size-radio fs-3"></div>
+
+                            </div>
+
+                            <div class="mb-5">
+                                <h4>Ustiga nima solaylik?</h4>
+                                <div class="topping-checkbox d-flex flex-column fs-3 mb-2"></div>
+                            </div>
+
+                            <div>
+                                <h4>Qo'shimchalar</h4>
+                                <div class="extra-product fs-4"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="order-Place-css order-place">
+                        <div class="d-flex">
+                            <h4>Non:</h4>
+                            <p class="order-bread w-50 fs-5 ms-2"></p>
+                        </div>
+
+                        <div class="size-order d-flex">
+                            <h4>Kattaligi:</h2>
+                                <p class="order-size fs-5 ms-2"></p>
+                        </div>
+
+                        <div class="topping-order">
+                            <h4>Ustida:</h4>
+                            <ul class="order-toppings fs-5">
+                            </ul>
+                        </div>
+
+                        <div class="extra-order">
+                            <h4>Qo'shimcha:</h3>
+                                <ul class="order-extra fs-5">
+                                </ul>
+                        </div>
+
+                        <button class="order-btn btn btn-block btn-danger text-white fs-4" form="pizza-form"
+                            name="front_door" value="submit" type="submit">Buyurtma berish
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
