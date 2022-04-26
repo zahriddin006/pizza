@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right top, #ec5757, #f97148, #fe8d38, #fcab2a, #f2c926, #f0ce2c, #edd433, #ebd939, #f3c83b, #f7b742, #f7a84a, #f49953) !important;
+}
+.pizza-block{
+    background-image: url("../img/bg-img-pizza.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc(900px);
+    background-position-y: calc(-400px);
+}
+.pizza-title{
+    background-color: coral;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.bread-select{
+    height: 40px;
+}
+.input-style{
+    width: 20px;
+    height: 20px;
+}
+.order-Place-css{
+    height: 700px;
+    padding: 10px 20px;
+    width: 400px;
+}
+.size-order{
+    height: 70px;
+}
+.topping-order{
+    height: 230px;
+}
+.extra-order{
+    height: 120px;
+}
