@@ -142,8 +142,10 @@ let showOrderToppings = function () {
     }
 };
 
-orderBtn.addEventListener("click", function(event){
-    alert("Sizning buyurtmangiz qabul qilindi! 👍🎉");
-    window.location.reload();
-    event.preventDefault();
-});
+
+
+// orderBtn.addEventListener("click", function(event){
+//     alert("Sizning buyurtmangiz qabul qilindi! 👍🎉");
+//     window.location.reload();
+//     event.preventDefault();
+// });
