@@ -67,7 +67,7 @@ for (let i = 0; i < sizes.length; i++) {
 
     if(elSizeInput.value == sizes[1]){
         elSizeInput.checked = true;
-        elOrderSize.textContent = sizes[i] + "sm";
+        elOrderSize.textContent = sizes[i] + " sm";
     }
 }
 
