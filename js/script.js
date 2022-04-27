@@ -64,6 +64,11 @@ for (let i = 0; i < sizes.length; i++) {
     });
     elSizeLabel.append(elSizeInput, elSizeSpan);
     elSizePizza.appendChild(elSizeLabel);
+
+    if(elSizeInput.value == sizes[1]){
+        elSizeInput.checked = true;
+        elOrderSize.textContent = sizes[i];
+    }
 }
 
 // extra product selection
@@ -142,10 +147,3 @@ let showOrderToppings = function () {
     }
 };
 
-
-
-// orderBtn.addEventListener("click", function(event){
-//     alert("Sizning buyurtmangiz qabul qilindi! 👍🎉");
-//     window.location.reload();
-//     event.preventDefault();
-// });
