@@ -69,21 +69,21 @@ for (let i = 0; i < sizes.length; i++) {
 // extra product selection
 
 for (let i = 0; i < extra.length; i++) {
-    let elNewlLabel = document.createElement("label");
-    let elAddlInput = document.createElement("input");
-    let elAddlSpan = document.createElement("span");
+    let elAddLabel = document.createElement("label");
+    let elAddInput = document.createElement("input");
+    let elAddSpan = document.createElement("span");
 
-    elAddlInput.type = "checkbox";
-    elAddlInput.name = "size";
-    elAddlInput.value = extra[i];
-    elAddlSpan.textContent = extra[i];
-    elAddlInput.className = "input-style me-1";
-    elAddlSpan.className = "me-2"
+    elAddInput.type = "checkbox";
+    elAddInput.name = "size";
+    elAddInput.value = extra[i];
+    elAddSpan.textContent = extra[i];
+    elAddInput.className = "input-style me-1";
+    elAddSpan.className = "me-2"
 
-    elNewlLabel.append(elAddlInput, elAddlSpan);
-    elExtraProduct.appendChild(elNewlLabel);
+    elAddLabel.append(elAddInput, elAddSpan);
+    elExtraProduct.appendChild(elAddLabel);
 
-    elAddlInput.addEventListener("change", function () {
+    elAddInput.addEventListener("change", function () {
         if (orderExtra.indexOf( extra[i]) > -1) {
             let addlIndex = orderExtra.indexOf( extra[i]);
             orderExtra.splice(addlIndex, 1);
@@ -97,21 +97,21 @@ for (let i = 0; i < extra.length; i++) {
 // selection of basic products
 
 for (let i = 0; i < toppings.length; i++) {
-    let elToppingLabel = document.createElement("label");
-    let elToppingInput = document.createElement("input");
+    let elAddTopLabel = document.createElement("label");
+    let elAddTopInput = document.createElement("input");
     let elToppingSpan = document.createElement("span");
 
-    elToppingInput.type = "checkbox";
-    elToppingInput.name = "size";
-    elToppingInput.className = "input-style me-2";
-    elToppingInput.value = toppings[i];
+    elAddTopInput.type = "checkbox";
+    elAddTopInput.name = "size";
+    elAddTopInput.className = "input-style me-2";
+    elAddTopInput.value = toppings[i];
 
     elToppingSpan.textContent = toppings[i];
 
-    elToppingLabel.append(elToppingInput, elToppingSpan);
-    elToppingCheckboxWrapper.appendChild(elToppingLabel);
+    elAddTopLabel.append(elAddTopInput, elToppingSpan);
+    elToppingCheckboxWrapper.appendChild(elAddTopLabel);
 
-    elToppingInput.addEventListener("change", function () {
+    elAddTopInput.addEventListener("change", function () {
         if (orderToppings.indexOf(toppings[i]) > -1) {
             let toppingIndex = orderToppings.indexOf(toppings[i]);
             orderToppings.splice(toppingIndex, 1);
