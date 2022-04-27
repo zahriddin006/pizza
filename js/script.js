@@ -54,6 +54,7 @@ for (let i = 0; i < sizes.length; i++) {
     elSizeInput.type = "radio";
     elSizeInput.name = "size";
     elSizeInput.className = "input-style";
+    elSizeInput.setAttribute("checked", "on");
     elSizeInput.value = sizes[i];
     
     elSizeSpan.textContent = ` ${sizes[i]}sm`;
@@ -94,6 +95,16 @@ for (let i = 0; i < extra.length; i++) {
     });
 }
 
+let showOrderExtra = function () {
+    elOrderExtra.innerHTML = "";
+    
+    for (let i = 0; i < orderExtra.length; i++) {
+        let elNewExralLi = document.createElement("li");
+        elNewExralLi.textContent = orderExtra[i];
+        elOrderExtra.appendChild(elNewExralLi);
+    }
+};
+
 // selection of basic products
 
 for (let i = 0; i < toppings.length; i++) {
@@ -122,18 +133,6 @@ for (let i = 0; i < toppings.length; i++) {
     });
 }
 
-// order result
-
-let showOrderExtra = function () {
-    elOrderExtra.innerHTML = "";
-    
-    for (let i = 0; i < orderExtra.length; i++) {
-        let elNewExralLi = document.createElement("li");
-        elNewExralLi.textContent = orderExtra[i];
-        elOrderExtra.appendChild(elNewExralLi);
-    }
-};
-
 let showOrderToppings = function () {
     elOrderToppings.innerHTML = "";
 
@@ -143,11 +142,3 @@ let showOrderToppings = function () {
         elOrderToppings.appendChild(elOrderToppingLi);
     }
 };
-
-// order btn
-
-orderBtn.addEventListener("click", function(e){
-    alert("Sizning buyurtmangiz qabul qilindi 👍");
-    window.location.reload();
-    e.preventDefault();
-})
