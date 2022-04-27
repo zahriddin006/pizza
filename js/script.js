@@ -54,7 +54,6 @@ for (let i = 0; i < sizes.length; i++) {
     elSizeInput.type = "radio";
     elSizeInput.name = "size";
     elSizeInput.className = "input-style";
-    elSizeInput.setAttribute("checked", "on");
     elSizeInput.value = sizes[i];
     
     elSizeSpan.textContent = ` ${sizes[i]}sm`;
@@ -142,3 +141,9 @@ let showOrderToppings = function () {
         elOrderToppings.appendChild(elOrderToppingLi);
     }
 };
+
+orderBtn.addEventListener("click", function(event){
+    alert("Sizning buyurtmangiz qabul qilindi! 👍🎉");
+    window.location.reload();
+    event.preventDefault();
+});
