@@ -52,7 +52,7 @@ for (let i = 0; i < sizes.length; i++) {
     let elSizeSpan = document.createElement("span");
     
     elSizeInput.type = "radio";
-    elSizeInput.name = "size";
+    elSizeInput.name = "Bread size:";
     elSizeInput.className = "input-style";
     elSizeInput.value = sizes[i];
     
@@ -79,7 +79,7 @@ for (let i = 0; i < extra.length; i++) {
     let elAddSpan = document.createElement("span");
 
     elAddInput.type = "checkbox";
-    elAddInput.name = "size";
+    elAddInput.name = "pizza extra products:";
     elAddInput.value = extra[i];
     elAddSpan.textContent = extra[i];
     elAddInput.className = "input-style me-1";
@@ -117,7 +117,7 @@ for (let i = 0; i < toppings.length; i++) {
     let elToppingSpan = document.createElement("span");
 
     elAddTopInput.type = "checkbox";
-    elAddTopInput.name = "size";
+    elAddTopInput.name = "pizza toppings:";
     elAddTopInput.className = "input-style me-2";
     elAddTopInput.value = toppings[i];
 
